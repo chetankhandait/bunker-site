@@ -5,7 +5,6 @@ import PropertyList from "./component/PropertyList";
 import Footer from "./component/Footer";
 import Testimonial from "./component/Testinomials";
 import CustomerReviews from "./component/Testinomials";
-// import CarouselComponent from './component/Test'
 
 const App = () => {
   return (

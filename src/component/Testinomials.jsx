@@ -105,7 +105,7 @@ precision."
         </div>
       </div>
     </section>
-    <img src="src/assets/img.webp" alt="" class="w-full p-5 rounded-md object-cover h-[553px] lg:w-1/3 block  " />
+    <img src="src/assets/img.webp" alt="" class="w-full p-5  rounded-md object-cover h-[384px] lg:w-1/3 block lg:p-0 lg:rounded-none" />
 
     </div>
 
@@ -113,3 +113,4 @@ precision."
 };
 
 export default CustomerReviews;
+  
