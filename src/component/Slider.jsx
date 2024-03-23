@@ -13,7 +13,7 @@ function Fade() {
 
   return (
     <div className="bg-green-700  h-60 text-white   "> {/* Adjusted width to occupy 2/3 of the screen */}
-      <Slider {...settings}>
+      <Slider {...settings} className="w-72">
         <div>
           <div className="slider-text">Text for Slide 1</div>
         </div>

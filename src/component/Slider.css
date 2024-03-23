@@ -1,0 +1,41 @@
+/* Styles for the Keen Slider container */
+.keen-slider {
+    position: relative;
+    overflow: hidden;
+    /* background-color: green; */
+    display: flex;
+    text-align: left;
+    /* width:/ 60%; */
+    width: 70%;
+    
+}
+
+/* Styles for individual slides */
+.keen-slider__slide {
+      text-wrap: wrap;
+    position: relative;
+    /* width:0%; */
+    height: 200px;
+background-color:yellow;
+padding: 20px;
+width: 150px;
+font-size: 1.4rem;
+;
+}
+  
+  /* Styles for active slide */
+  .keen-slider__slide--active {
+    /* Custom styles for the active slide */
+  }
+  
+  /* Styles for slider controls */
+  .keen-slider__controls {
+    /* Custom styles for slider controls */
+    
+  }
+  
+  /* Styles for navigation buttons */
+  .keen-slider__nav {
+    /* Custom styles for navigation buttons */
+  }
+  
