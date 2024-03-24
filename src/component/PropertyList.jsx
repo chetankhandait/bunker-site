@@ -30,7 +30,7 @@ function PropertyList() {
               <div>
                 <dt className="sr-only">Price</dt>
 
-                <dd className="text-sm text-gray-500">Starting 499₹/day</dd>
+                <dd className="text-sm text-gray-500">Starting 499₹ /day</dd>
               </div>
 
               <div>
