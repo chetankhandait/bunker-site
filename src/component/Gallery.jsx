@@ -216,7 +216,7 @@ import Image3 from "../assets/b-3.jpg";
 import Image4 from "../assets/b-4.jpg";
 import Image5 from "../assets/b-5.jpg";
 import Image6 from "../assets/b-6.jpg";
-import Image7 from "../assets/b-7.jpg";
+import Image7 from "../assets/b-11.jpg";
 import Image8 from "../assets/b-8.jpg";
 import Image9 from "../assets/b-9.jpg";
 import Image10 from "../assets/b-10.jpg";
@@ -233,7 +233,7 @@ function Gallery() {
             <img className="h-auto max-w-full rounded-lg" src={Image1} alt="" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={Image2} alt="" />
+            <img className="h-auto max-w-full rounded-lg" src="src/assets/b-14.jpg" alt="" />
           </div>
           <div>
             <img className="h-auto max-w-full rounded-lg" src={Image3} alt="" />
@@ -241,10 +241,10 @@ function Gallery() {
         </div>
         <div className="grid gap-4">
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={Image4} alt="" />
+            <img className="h-auto max-w-full rounded-lg" src={Image2} alt="" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={Image4} alt="" />
+            <img className="h-auto max-w-full rounded-lg" src="src/assets/b-15.jpg" alt="" />
           </div>
           <div>
             <img className="h-auto max-w-full rounded-lg" src={Image5} alt="" />
@@ -252,7 +252,7 @@ function Gallery() {
         </div>
         <div className="grid gap-4">
           <div>
-            <img className="h-auto max-w-full rounded-lg" src={Image6} alt="" />
+            <img className="h-auto max-w-full rounded-lg" src="src/assets/b-12.jpg" alt="" />
           </div>
           <div>
             <img className="h-auto max-w-full rounded-lg" src={Image7} alt="" />

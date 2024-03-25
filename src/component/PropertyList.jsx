@@ -113,7 +113,7 @@ function PropertyList() {
               </div>
             </div>
           </div>
-          <Link className="text-center bg-green-700 block mt-8 pt-2 pb-2 text-white rounded-xl">
+          <Link className="text-center bg-[#076253] block mt-8 pt-2 pb-2 text-white rounded-xl">
             Book Now
           </Link>
         </a>
@@ -213,7 +213,7 @@ function PropertyList() {
               </div>
             </div>
           </div>
-          <Link className="text-center bg-green-700 block mt-8 pt-2 pb-2 text-white rounded-xl">
+          <Link className="text-center bg-[#076253] block mt-8 pt-2 pb-2 text-white rounded-xl">
             Book Now
           </Link>
         </a>
@@ -313,7 +313,7 @@ function PropertyList() {
               </div>
             </div>
           </div>
-          <Link className="text-center bg-green-700 block mt-8 pt-2 pb-2 text-white rounded-xl">
+          <Link className="text-center bg-[#076253] block mt-8 pt-2 pb-2 text-white rounded-xl">
             Book Now
           </Link>
         </a>

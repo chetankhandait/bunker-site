@@ -8,6 +8,7 @@ import CustomerReviews from "./component/Testinomials";
 import ProfileCard from "./component/AboutUs";
 import ContactForm from "./component/ContactForm";
 import Navbar from "./component/Navbar";
+import TestComponent from "./component/TestComponent";
 
 const App = () => {
   return (
@@ -18,7 +19,8 @@ const App = () => {
       <Gallery />
       <CustomerReviews />
       <ProfileCard />
-      <ContactForm />
+      {/* <ContactForm /> */}
+      <TestComponent/>
       <Footer />
 
       {/* <CarouselComponent/> */}
