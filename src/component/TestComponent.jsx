@@ -3,6 +3,9 @@ import React from 'react';
 const TestComponent = () => {
   return (
     <div>
+       <h1 className="text-5xl py-8 text-center font-serif underline mb-8 text-[#076253] shadow-slate-600 text-heading">
+      Contact Us
+      </h1>
       <div className="max-w-screen-lg mx-auto p-5">
         <div className="grid grid-cols-1 md:grid-cols-12 border">
           <div className="bg-gray-900 md:col-span-4 p-10 text-white">

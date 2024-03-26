@@ -224,7 +224,7 @@ import Image11 from "../assets/IMG_1694.jpg";
 function Gallery() {
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-6xl text-center mb-8 text-orange-300">
+      <h1 className="text-5xl text-center font-serif underline mb-8 text-[#076253] shadow-slate-600 text-heading">
         Image Gallery
       </h1>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

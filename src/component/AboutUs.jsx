@@ -8,6 +8,10 @@ const ProfileCard = () => {
   };
 
   return (
+    <>
+    <h1 className="text-5xl py-7 text-center font-serif underline mb-8 text-[#076253] shadow-slate-600 text-heading">
+        About Us
+      </h1>
     <div
       className={`font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover mt-12 ${
         theme === "light" ? "bg-white" : "bg-gray-900"
@@ -60,6 +64,7 @@ const ProfileCard = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
