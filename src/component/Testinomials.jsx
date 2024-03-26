@@ -33,11 +33,17 @@ const CustomerReviews = () => {
   }, []);
 
   return (
+    <>
+    
+<h1 className="text-5xl py-8 text-center font-serif underline mb-8 text-[#076253] drop-shadow text-heading  ">
+        Testimonials
+      </h1>
     <div className="flex flex-col w-full bg-[#02312f] text-white lg:flex-row   ">
       <section
         className="w-full bg-[#02312f] text-white lg:w-2/3 "
         id="testimonials"
       >
+
         <div className="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24">
           <div className="max-w-7xl items-end justify-between sm:flex sm:pe-6 lg:pe-8">
             <h2 className="max-w-xl text-4xl font-bold tracking-tight   sm:text-5xl">
@@ -114,6 +120,7 @@ const CustomerReviews = () => {
         class="w-full p-5  rounded-md object-cover   lg:w-1/3  h-full block lg:p-0 lg:rounded-none"
       />
     </div>
+    </>
   );
 };
 
