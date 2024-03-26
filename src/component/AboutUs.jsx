@@ -56,12 +56,7 @@ const ProfileCard = () => {
         </div>
         {/* Theme toggle button */}
         <div className="absolute top-0 right-0 h-12 w-18 p-4">
-          <button
-            className="js-change-theme focus:outline-none"
-            onClick={toggleTheme}
-          >
-            {theme === "light" ? "🌙" : "☀"}
-          </button>
+          
         </div>
       </div>
     </div>

@@ -296,13 +296,13 @@ import React from "react";
 
 function Footer() {
   return (
-    <section className="bg-gray-100">
+    <section className="bg-[#076253] text-white">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
         <div className="max-w-2xl lg:max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-extrabold text-gray-900">
+          <h2 className="text-3xl font-extrabold  ">
             Visit Our Location
           </h2>
-          <p className="mt-4 text-lg text-gray-500">
+          <p className="mt-4 text-lg  ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
         </div>
@@ -322,25 +322,25 @@ function Footer() {
             <div>
               <div className="max-w-full mx-auto rounded-lg overflow-hidden">
                 <div className="px-6 py-4">
-                  <h3 className="text-lg font-medium text-gray-900">
+                  <h3 className="text-lg font-medium  ">
                     Our Address
                   </h3>
-                  <p className="mt-1 text-gray-600">
+                  <p className="mt-1  ">
                     123 Main St, San Francisco, CA 94105
                   </p>
                 </div>
                 <div className="border-t border-gray-200 px-6 py-4">
-                  <h3 className="text-lg font-medium text-gray-900">Hours</h3>
-                  <p className="mt-1 text-gray-600">
+                  <h3 className="text-lg font-medium  ">Hours</h3>
+                  <p className="mt-1  ">
                     Monday - Friday: 9am - 5pm
                   </p>
-                  <p className="mt-1 text-gray-600">Saturday: 10am - 4pm</p>
-                  <p className="mt-1 text-gray-600">Sunday: Closed</p>
+                  <p className="mt-1  ">Saturday: 10am - 4pm</p>
+                  <p className="mt-1  ">Sunday: Closed</p>
                 </div>
                 <div className="border-t border-gray-200 px-6 py-4">
-                  <h3 className="text-lg font-medium text-gray-900">Contact</h3>
-                  <p className="mt-1 text-gray-600">Email: info@example.com</p>
-                  <p className="mt-1 text-gray-600">Phone: +1 23494 34993</p>
+                  <h3 className="text-lg font-medium  ">Contact</h3>
+                  <p className="mt-1  ">Email: info@example.com</p>
+                  <p className="mt-1  ">Phone: +1 23494 34993</p>
                 </div>
               </div>
             </div>
