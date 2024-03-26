@@ -43,7 +43,19 @@ const ProfileCard = () => {
               What you do
             </p>
             {/* Other content */}
-            {/* ... */}
+            <p className="pt-6 text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec
+              velit nec augue tincidunt accumsan ac vel nisi. Nulla facilisi.
+            </p>
+            {/* Theme toggle button */}
+            <div className="pt-6">
+              <button
+                className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+                onClick={toggleTheme}
+              >
+                Toggle Theme
+              </button>
+            </div>
           </div>
         </div>
         {/* Img Col */}
@@ -53,10 +65,6 @@ const ProfileCard = () => {
             className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block"
             alt="Profile"
           />
-        </div>
-        {/* Theme toggle button */}
-        <div className="absolute top-0 right-0 h-12 w-18 p-4">
-          
         </div>
       </div>
     </div>
