@@ -131,7 +131,7 @@ function ContactForm() {
 
   return (
     <div
-      className="min-h-screen py-6 flex flex-col justify-center sm:py-12"
+      className="min-h-screen bg-gray-800 py-6 flex flex-col justify-center sm:py-12"
       id="contact"
     >
       <div className="relative py-3 sm:max-w-xl sm:mx-auto">
