@@ -48,7 +48,7 @@ const CustomerReviews = () => {
               <button
                 aria-label="Previous slide"
                 id="keen-slider-previous"
-                className="rounded-full border border-rose-600 p-3   transition hover:bg-rose-600 hover:text-white"
+                className="rounded-full border border-white p-3   transition hover:bg-[#076253] hover:text-white"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +69,7 @@ const CustomerReviews = () => {
               <button
                 aria-label="Next slide"
                 id="keen-slider-next"
-                className="rounded-full border border-rose-600 p-3 text-rose-600 transition hover:bg-rose-600 hover:text-white"
+                className="rounded-full border border-white p-3 text-white transition hover:bg-[#076253] hover:text-white"
               >
                 <svg
                   className="size-5 rtl:rotate-180"
@@ -111,7 +111,7 @@ const CustomerReviews = () => {
       <img
         src="src/assets/img.webp"
         alt=""
-        class="w-full p-5  rounded-md object-cover h-[384px] lg:w-1/3 block lg:p-0 lg:rounded-none"
+        class="w-full p-5  rounded-md object-cover   lg:w-1/3  h-full block lg:p-0 lg:rounded-none"
       />
     </div>
   );
