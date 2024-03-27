@@ -34,7 +34,9 @@ const ProfileCard = () => {
                 backgroundImage: `url('https://source.unsplash.com/MP0IUfwrn0A')`,
               }}
             ></div>
-            <h1 className="text-3xl font-bold pt-8 lg:pt-0">Your Name</h1>
+            <h1 className="text-3xl font-bold pt-8 lg:pt-0">
+              Pawan Deep
+            </h1>
             <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
             <p className="pt-4 text-base font-bold flex items-center justify-center lg:justify-start">
               <svg
@@ -48,24 +50,25 @@ const ProfileCard = () => {
             </p>
             {/* Other content */}
             <p className="pt-6 text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec
-              velit nec augue tincidunt accumsan ac vel nisi. Nulla facilisi.
+             Explore our girls’ hostel in Jabalpur, offering comfortable living with bunk beds in both 4-sharing and 2-sharing rooms. Our prime location ensures easy access, and fully furnished rooms create a cozy, aesthetic vibe. Unwind in our chill area equipped with a Netflix subscription for your entertainment. Experience a delightful blend of convenience and comfort at our hostel.
+
             </p>
             {/* Theme toggle button */}
             <div className="pt-6">
-              <button
-                className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
-                onClick={toggleTheme}
-              >
-                Toggle Theme
-              </button>
+            <a
+              
+              className="inline-flex items-center cursor-pointer justify-center rounded-xl bg-[#076253] px-3 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:bg-green-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+               href="https://www.instagram.com/p/C28EE2DBscS/" target="_blank"
+            >
+              Contact Us
+            </a>
             </div>
           </div>
         </div>
         {/* Img Col */}
         <div className="w-full lg:w-2/5">
           <img
-            src="https://source.unsplash.com/MP0IUfwrn0A"
+            src="src/assets/logo.jpg"
             className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block"
             alt="Profile"
           />

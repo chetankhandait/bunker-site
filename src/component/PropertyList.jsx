@@ -113,7 +113,7 @@ function PropertyList() {
               </div>
             </div>
           </div>
-          <Link className="text-center bg-[#076253] block mt-8 pt-2 pb-2 text-white rounded-xl">
+          <Link className="text-center bg-[#076253] block mt-8 pt-2 pb-2 text-white rounded-xl" to="">
             Book Now
           </Link>
         </a>
