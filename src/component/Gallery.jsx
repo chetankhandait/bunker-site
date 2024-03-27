@@ -233,7 +233,7 @@ function Gallery() {
             <img className="h-auto max-w-full rounded-lg" src={Image1} alt="" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src="src/assets/b-14.jpg" alt="" />
+            <img className="h-auto max-w-full rounded-lg" src="public/images/b-14.jpg" alt="" />
           </div>
           <div>
             <img className="h-auto max-w-full rounded-lg" src={Image3} alt="" />
@@ -244,7 +244,7 @@ function Gallery() {
             <img className="h-auto max-w-full rounded-lg" src={Image2} alt="" />
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src="src/assets/b-15.jpg" alt="" />
+            <img className="h-auto max-w-full rounded-lg" src="public/images/b-15.jpg" alt="" />
           </div>
           <div>
             <img className="h-auto max-w-full rounded-lg" src={Image5} alt="" />
@@ -252,7 +252,7 @@ function Gallery() {
         </div>
         <div className="grid gap-4">
           <div>
-            <img className="h-auto max-w-full rounded-lg" src="src/assets/b-12.jpg" alt="" />
+            <img className="h-auto max-w-full rounded-lg" src="public/images/b-12.jpg" alt="" />
           </div>
           <div>
             <img className="h-auto max-w-full rounded-lg" src={Image7} alt="" />

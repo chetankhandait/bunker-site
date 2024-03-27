@@ -23,7 +23,7 @@ function PropertyList() {
         >
           <img
             alt=""
-            src="src/assets/b-1.jpg"
+            src="public/images/b-1.jpg"
             className="h-56 w-full rounded-md object-cover"
           />
 
@@ -123,7 +123,7 @@ function PropertyList() {
         >
           <img
             alt=""
-            src="src/assets/b-1.jpg"
+            src="public/images/b-1.jpg"
             className="h-56 w-full rounded-md object-cover"
           />
 
@@ -223,7 +223,7 @@ function PropertyList() {
         >
           <img
             alt=""
-            src="src/assets/b-11.jpg"
+            src="public/images/b-11.jpg"
             className="h-56 w-full rounded-md object-cover"
           />
 
