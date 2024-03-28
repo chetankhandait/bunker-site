@@ -17,3 +17,8 @@
     /* background: greenyellow; */
     text-shadow: 4px 4px 11px #c2a8a8;
   }
+
+  #preloaderdiv>svg{
+    width: 140px;
+
+  }

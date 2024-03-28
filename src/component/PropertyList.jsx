@@ -217,7 +217,7 @@ function PropertyList() {
             Book Now
           </Link>
         </a>
-         
+         ``
       </div>
     </div>
   );
