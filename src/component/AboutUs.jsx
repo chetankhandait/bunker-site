@@ -31,7 +31,7 @@ const ProfileCard = () => {
             <div
               className="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
               style={{
-                backgroundImage: `url('https://source.unsplash.com/MP0IUfwrn0A')`,
+                backgroundImage: `url('/images/logo.jpg')`,
               }}
             ></div>
             <h1 className="text-3xl font-bold pt-8 lg:pt-0">
@@ -46,7 +46,7 @@ const ProfileCard = () => {
               >
                 <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z" />
               </svg>{" "}
-              What you do
+              Dance Choreographer
             </p>
             {/* Other content */}
             <p className="pt-6 text-sm">
