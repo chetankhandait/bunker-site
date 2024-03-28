@@ -68,7 +68,7 @@ const ProfileCard = () => {
         {/* Img Col */}
         <div className="w-full lg:w-2/5">
           <img
-            src="public/images/logo.jpg"
+            src="/images/logo.jpg"
             className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block"
             alt="Profile"
           />

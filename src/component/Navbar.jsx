@@ -16,7 +16,7 @@ function Navbar() {
             <a aria-current="page" className="flex items-center cursor-pointer" href="/">
               <img
                 className="w-[5.55rem] h-[41px] rounded-lg  object-cover "
-                src="public/images/logo.jpg"
+                src="/images/logo.jpg"
                 alt="Logo"
               />
               <p className="sr-only">Website Title</p>
