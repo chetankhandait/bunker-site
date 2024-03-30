@@ -115,7 +115,7 @@ const CustomerReviews = () => {
         </div>
       </section>
       <img
-        src="src/assets/img.webp"
+        src="/images/img.webp"
         alt=""
         class="w-full p-5  rounded-md object-cover   lg:w-1/3  h-full block lg:p-0 lg:rounded-none"
       />

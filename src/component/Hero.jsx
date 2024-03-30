@@ -27,13 +27,13 @@ function Hero() {
             <div className="mt-8 flex flex-wrap gap-4 text-center">
               <Link
                 activeClass="active"
-                to="contactForm"
+                to="contact"
                 spy={true}
                 smooth={true}
                 offset={100}
                 duration={500}
                 // href="#"
-                className=" cursor-pointer block w-full rounded bg-[#076253] px-12 py-3 text-md font-semibold text-white shadow hover:bg-green-800 focus:outline-none focus:ring active:bg-green-500 sm:w-auto"
+                className="block w-full rounded bg-[#076253] px-12 py-3 text-md font-semibold text-white shadow hover:bg-green-800 focus:outline-none focus:ring active:bg-green-500 sm:w-auto"
               >
                 Book your Hostel
               </Link>
