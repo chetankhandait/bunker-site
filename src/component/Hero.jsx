@@ -8,7 +8,7 @@ function Hero() {
     This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
   */}
 
-      <section className="relative bg-[url(/public/images/b-11.jpg)] bg-cover bg-center bg-no-repeat">
+      <section className="relative bg-[url(/images/b-11.jpg)] bg-cover bg-center bg-no-repeat">
         <div className="absolute inset-0 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
 
         <div
