@@ -8,7 +8,7 @@ function Hero() {
     This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
   */}
 
-      <section className="relative bg-[url(https://framerusercontent.com/images/uzpCtuYDgW95T4BOxvHZMRJKE.png?scale-down-to=2048)] bg-cover bg-center bg-no-repeat">
+      <section className="relative bg-[url(/src/assets/b-11.jpg)] bg-cover bg-center bg-no-repeat">
         <div className="absolute inset-0 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
 
         <div
@@ -33,7 +33,7 @@ function Hero() {
                 offset={100}
                 duration={500}
                 // href="#"
-                className="block w-full rounded bg-[#076253] px-12 py-3 text-md font-semibold text-white shadow hover:bg-green-800 focus:outline-none focus:ring active:bg-green-500 sm:w-auto"
+                className=" cursor-pointer block w-full rounded bg-[#076253] px-12 py-3 text-md font-semibold text-white shadow hover:bg-green-800 focus:outline-none focus:ring active:bg-green-500 sm:w-auto"
               >
                 Book your Hostel
               </Link>

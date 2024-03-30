@@ -13,7 +13,11 @@ function Navbar() {
       <div className="px-4">
         <div className="flex items-center justify-between">
           <div className="flex shrink-0">
-            <a aria-current="page" className="flex items-center cursor-pointer" href="/">
+            <a
+              aria-current="page"
+              className="flex items-center cursor-pointer"
+              href="/"
+            >
               <img
                 className="w-[5.55rem] h-[41px] rounded-lg  object-cover "
                 src="src/assets/logo.jpg"
@@ -67,7 +71,7 @@ function Navbar() {
               offset={-50}
               duration={500}
             >
-              Properties
+              Hostels
             </Link>
           </div>
           <div className="flex items-center justify-end gap-3">
