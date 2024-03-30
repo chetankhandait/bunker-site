@@ -31,10 +31,12 @@ const ProfileCard = () => {
             <div
               className="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
               style={{
-                backgroundImage: `url('https://source.unsplash.com/MP0IUfwrn0A')`,
+                backgroundImage: `url('/images/logo.jpg')`,
               }}
             ></div>
-            <h1 className="text-3xl font-bold pt-8 lg:pt-0">Your Name</h1>
+            <h1 className="text-3xl font-bold pt-8 lg:pt-0">
+              Pawan Deep
+            </h1>
             <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
             <p className="pt-4 text-base font-bold flex items-center justify-center lg:justify-start">
               <svg
@@ -44,28 +46,29 @@ const ProfileCard = () => {
               >
                 <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z" />
               </svg>{" "}
-              What you do
+              Dance Choreographer
             </p>
             {/* Other content */}
             <p className="pt-6 text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec
-              velit nec augue tincidunt accumsan ac vel nisi. Nulla facilisi.
+             Explore our girls’ hostel in Jabalpur, offering comfortable living with bunk beds in both 4-sharing and 2-sharing rooms. Our prime location ensures easy access, and fully furnished rooms create a cozy, aesthetic vibe. Unwind in our chill area equipped with a Netflix subscription for your entertainment. Experience a delightful blend of convenience and comfort at our hostel.
+
             </p>
             {/* Theme toggle button */}
             <div className="pt-6">
-              <button
-                className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
-                onClick={toggleTheme}
-              >
-                Toggle Theme
-              </button>
+            <a
+              
+              className="inline-flex items-center cursor-pointer justify-center rounded-xl bg-[#076253] px-3 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-150  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2  "
+               href="https://www.instagram.com/p/C28EE2DBscS/" target="_blank"
+            >
+              Contact Us
+            </a>
             </div>
           </div>
         </div>
         {/* Img Col */}
         <div className="w-full lg:w-2/5">
           <img
-            src="https://source.unsplash.com/MP0IUfwrn0A"
+            src="/images/logo.jpg"
             className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block"
             alt="Profile"
           />
