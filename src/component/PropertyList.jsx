@@ -34,7 +34,7 @@ const PropertyList = () => {
               {/* <p className="text-2xl">||</p> */}
               <div className="mt-6">
                 <h3 className="text-3xl font-semibold">
-                  ₹499/- <sub className="text-gray-400 text-xs">per day</sub>
+                  ₹499/- <sub className="text-gray-400 text-xs">for one day</sub>
                 </h3>
               </div>
             </div>
@@ -183,7 +183,7 @@ const PropertyList = () => {
               {/* <p className="text-2xl">||</p> */}
               <div className="mt-6">
                 <h3 className="text-3xl font-semibold">
-                  ₹699/- <sub className="text-gray-400 text-xs">per day</sub>
+                  ₹699/- <sub className="text-gray-400 text-xs">for one day</sub>
                 </h3>
               </div>
             </div>

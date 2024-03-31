@@ -1,14 +1,28 @@
-// export default TestComponent;
-import React, { useRef } from "react";
+import React, { useRef, useState ,useEffect} from "react";
 import emailjs from "@emailjs/browser";
 import { IoCall, IoLocation } from "react-icons/io5";
 
 const TestComponent = () => {
+  const [hostelType, setHostelType] = useState(""); 
+  const [bookingType, setBookingType] = useState("");
+  const [numberOfDays, setNumberOfDays] = useState(1);
+  const [price, setPrice] = useState(0);
+
   const SEcondd = () => {
     window.location.href = `tel:${8817735958}`;
   };
 
   const form = useRef();
+  const calculatePrice = () => {
+    let pricePerDay = 0;
+    if (hostelType === "Cherry Bedroom") {
+      pricePerDay = bookingType === "Day" ? 499 : 3999;
+    } else if (hostelType === "Berry Bedroom") {
+      pricePerDay = bookingType === "Day" ? 699 : 4999;
+    }
+    setPrice(pricePerDay * numberOfDays);
+  };
+  
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -30,7 +44,9 @@ const TestComponent = () => {
         }
       );
   };
-
+  useEffect(() => {
+    calculatePrice();
+  }, [hostelType, bookingType, numberOfDays]);
   return (
     <div>
       <h1 className="text-5xl py-8 text-center font-serif underline mb-8 text-[#076253] shadow-slate-600 text-heading">
@@ -157,19 +173,96 @@ const TestComponent = () => {
                   className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                   htmlFor="grid-email"
                 >
-                  Email Address
+                  Contact Number 
                 </label>
                 <input
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="grid-email"
                   name="from_email"
-                  type="email"
-                  placeholder="@.*"
+                  type="number"
+                  placeholder="+91"
                   required
                 />
               </div>
             </div>
-
+            <div className="flex flex-wrap -mx-3 mb-6">
+              <div className="w-full px-5">
+                <label
+                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  htmlFor="grid-hostel-type"
+                >
+                  Hostel Type
+                </label>
+                <select
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="grid-hostel-type"
+                  name="hostelType"
+                  value={hostelType}
+                  onChange={(e) => setHostelType(e.target.value)}
+                  required
+                >
+                  <option value="">Select hostel type</option>
+                  <option value="Cherry Bedroom">Companion Bedroom</option>
+                  <option value="Berry Bedroom">Berry Bedroom</option>
+                </select>
+              </div>
+            </div>
+            <div className="w-full md:w-1/2 px-3">
+              <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                Booking Type
+              </label>
+              <div className="flex items-center gap-4 py-2">
+                <div className="">
+                  <input
+                    type="radio"
+                    id="day"
+                    name="bookingType"
+                    value="Day"
+                    checked={bookingType === "Day"}
+                    onChange={(e) => setBookingType(e.target.value)}
+                  />
+                  <label htmlFor="day" className="ml-2">Day wise</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="monthly"
+                    name="bookingType"
+                    value="Monthly"
+                    checked={bookingType === "Monthly"}
+                    onChange={(e) => setBookingType(e.target.value)}
+                  />
+                  <label htmlFor="monthly" className="ml-2">Monthly</label>
+                </div>
+              </div>
+            </div>
+            {bookingType === "Day" && (
+              <div className="w-full md:w-1/2 px-3">
+                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                  Number of Days
+                </label>
+                <input
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  type="number"
+                  min="1"
+                  value={numberOfDays}
+                  onChange={(e) => setNumberOfDays(e.target.value)}
+                />
+              </div>
+            )}
+            <div className="flex flex-wrap -mx-3 mb-6">
+        <div className="w-full px-3">
+          <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+            Price
+          </label>
+          <input
+            className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+            type="text"
+            value={price}
+            readOnly
+          />
+        </div>
+      </div>
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full px-3">
                 <label
@@ -187,9 +280,6 @@ const TestComponent = () => {
                 ></textarea>
               </div>
               <div className="flex justify-between w-full px-3">
-                <div className="md:flex md:items-center">
-                  <label className="block text-gray-500 font-bold"></label>
-                </div>
                 <button
                   className=" bg-[#076253]   focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded"
                   type="submit"
