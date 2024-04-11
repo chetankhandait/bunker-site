@@ -1,7 +1,68 @@
-import React from "react";
+import React, { useEffect } from "react";
+import KeenSlider from "https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm";
+import "./PropertySlider.css";
+
 import { Link } from "react-scroll";
 
 const PropertyList = () => {
+  useEffect(() => {
+    const keenSlider = new KeenSlider(
+      "#property-keen-slider",
+      {
+        loop: true,
+        slides: {
+          origin: "center",
+          perView: 1,
+          spacing: 16,
+        },
+        breakpoints: {
+          "(min-width: 1024px)": {
+            slides: {
+              origin: "auto",
+              perView: 1,
+              spacing: 32,
+            },
+          },
+        },
+      },
+      []
+    );
+
+    const keenSliderPrevious = document.getElementById("keen-slider-previous");
+    const keenSliderNext = document.getElementById("keen-slider-next");
+
+    keenSliderPrevious.addEventListener("click", () => keenSlider.prev());
+    keenSliderNext.addEventListener("click", () => keenSlider.next());
+  }, []);
+  useEffect(() => {
+    const keenSlider = new KeenSlider(
+      "#property-two-keen-slider",
+      {
+        loop: true,
+        slides: {
+          origin: "center",
+          perView: 1,
+          spacing: 16,
+        },
+        breakpoints: {
+          "(min-width: 1024px)": {
+            slides: {
+              origin: "auto",
+              perView: 1,
+              spacing: 32,
+            },
+          },
+        },
+      },
+      []
+    );
+
+    const keenSliderPrevious = document.getElementById("keen-slider-previous");
+    const keenSliderNext = document.getElementById("keen-slider-next");
+
+    keenSliderPrevious.addEventListener("click", () => keenSlider.prev());
+    keenSliderNext.addEventListener("click", () => keenSlider.next());
+  }, []);
   return (
     <div className="font-[sans-serif] text-[#333]">
       <div className="max-w-5xl mx-auto">
@@ -19,12 +80,50 @@ const PropertyList = () => {
             <p className="text-sm text-gray-500 mt-4 mb-4">
               For Individuals and Largest Teams
             </p>
-            <img
+            {/* <img
               src="/images/b-5.jpg"
               alt="Starter Plan"
               className="mx-auto mb-4"
               style={{ maxWidth: "100%", height: "auto" }}
-            />
+            /> */}
+            <div id="property-keen-slider" className="keen-slider">
+              <div className="keen-slider__slide">
+                {/* Review 1 content */}
+                <img
+                  src="/images/b-5.jpg"
+                  alt="Starter Plan"
+                  className="mx-auto mb-4"
+                  style={{ maxWidth: "100%", height: "auto" }}
+                />
+              </div>
+              <div className="keen-slider__slide">
+                {/* Review 2 content */}
+                <img
+                  src="/images/b-6.jpg"
+                  alt="Starter Plan"
+                  className="mx-auto mb-4"
+                  style={{ maxWidth: "100%", height: "auto" }}
+                />
+              </div>
+              <div className="keen-slider__slide">
+                <img
+                  src="/images/b-12.jpg"
+                  alt="Starter Plan"
+                  className="mx-auto mb-4"
+                  style={{ maxWidth: "100%", height: "auto" }}
+                />
+              </div>
+              <div className="keen-slider__slide">
+                <img
+                  src="/images/b-10.jpg"
+                  alt="Starter Plan"
+                  className="mx-auto mb-4"
+                  style={{ maxWidth: "100%", height: "auto" }}
+                />
+              </div>
+
+              {/* Add more keen-slider__slide divs for additional reviews */}
+            </div>
             <div className="flex items-center justify-between text-[#076253]">
               <div className="mt-6">
                 <h3 className=" text-3xl font-semibold">
@@ -34,7 +133,8 @@ const PropertyList = () => {
               {/* <p className="text-2xl">||</p> */}
               <div className="mt-6">
                 <h3 className="text-3xl font-semibold">
-                  ₹499/- <sub className="text-gray-400 text-xs">for one day</sub>
+                  ₹699/-{" "}
+                  <sub className="text-gray-400 text-xs">for one day</sub>
                 </h3>
               </div>
             </div>
@@ -168,22 +268,63 @@ const PropertyList = () => {
             <p className="text-sm text-gray-500 mt-4 mb-4">
               For Multiples and Largest Teams
             </p>
-            <img
+            {/* <img
               src="/images/b-2.jpg"
               alt="Starter Plan"
               className="mx-auto mb-2"
               style={{ maxWidth: "100%", height: "auto" }}
-            />
+            /> */}
+            <div id="property-two-keen-slider" className="keen-slider">
+              <div className="keen-slider__slide">
+                {/* Review 1 content */}
+                <img
+                  src="/images/b-2.jpg"
+                  alt="Starter Plan"
+                  className="mx-auto mb-4"
+                  style={{ maxWidth: "100%", height: "auto" }}
+                />
+              </div>
+              <div className="keen-slider__slide">
+                {/* Review 2 content */}
+                <img
+                  src="/images/b-11.jpg"
+                  alt="Starter Plan"
+                  className="mx-auto mb-4"
+                  style={{ maxWidth: "100%", height: "auto" }}
+                />
+              </div>
+              <div className="keen-slider__slide">
+                {/* Review 2 content */}
+                <img
+                  src="/images/b-6.jpg"
+                  alt="Starter Plan"
+                  className="mx-auto mb-4"
+                  style={{ maxWidth: "100%", height: "auto" }}
+                />
+              </div>
+              <div className="keen-slider__slide">
+                <img
+                  src="/images/b-17.jpg"
+                  alt="Starter Plan"
+                  className="mx-auto mb-4"
+                  style={{ maxWidth: "100%", height: "auto" }}
+                />
+              </div>
+              
+
+              {/* Add more keen-slider__slide divs for additional reviews */}
+            </div>
             <div className="flex items-center justify-between text-[#076253]">
               <div className="mt-6">
                 <h3 className="text-3xl font-semibold">
-                  ₹4999/- <sub className="text-gray-400 text-xs">per month</sub>
+                  ₹2999/- <sub className="text-gray-400 text-xs">per month</sub>
                 </h3>
               </div>
               {/* <p className="text-2xl">||</p> */}
               <div className="mt-6">
                 <h3 className="text-3xl font-semibold">
-                  ₹699/- <sub className="text-gray-400 text-xs">for one day</sub>
+                  ₹499/-{" "}
+                  <sub className="text-gray-400 text-xs">for one day</sub>
                 </h3>
               </div>
             </div>
