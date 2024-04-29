@@ -1,6 +1,7 @@
 import React, { useRef, useState ,useEffect} from "react";
 import emailjs from "@emailjs/browser";
 import { IoCall, IoLocation } from "react-icons/io5";
+import { FaWhatsapp } from "react-icons/fa";
 
 const TestComponent = () => {
   const [hostelType, setHostelType] = useState(""); 
@@ -86,6 +87,7 @@ const TestComponent = () => {
                 Gorakhpur,Jabalpur
               </span>
             </div>
+          <a href="https://wa.me/message/SKQUTRXIJNMUL1" target="_blank">
 
             <div className="flex items-center mt-5">
               <svg
@@ -102,16 +104,22 @@ const TestComponent = () => {
               >
                 {/* SVG Path Data */}
               </svg>
+
               <button
                 className="text-lg font-medium flex items-center gap-2 "
-                onClick={SEcondd}
+                 
               >
-                <IoCall />
+               
 
-                {8817735958}
+                <FaWhatsapp />
+               Watsapp
+                 
+
               </button>
+              
             </div>
-
+          </a>
+             
             <div className="flex items-center mt-5">
               <svg
                 className="h-6 mr-2 text-indigo-600"
