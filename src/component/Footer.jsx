@@ -2,6 +2,7 @@ import { BsInstagram } from "react-icons/bs";
 import { IoCall } from "react-icons/io5";
 import { FaTwitter } from "react-icons/fa";
 import { IoLocation } from "react-icons/io5";
+import { FaWhatsapp } from "react-icons/fa";
 
 import React from "react";
 
@@ -82,6 +83,9 @@ function Footer( ) {
                   <a className="text-lg font-medium flex items-center gap-2 ">
                     <FaTwitter/>
                     Instagram </a>
+                    <a href="https://wa.me/message/SKQUTRXIJNMUL1" className="text-lg font-medium flex items-center gap-2 " target="_blank"> 
+                    <FaWhatsapp/>
+                    Watsapp</a>
                   
                 </div>
               </div>

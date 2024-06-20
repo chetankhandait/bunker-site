@@ -254,12 +254,15 @@ const PropertyList = () => {
                 </li>
               </ul>
               <Link to="contact">
+                <a href="https://wa.me/message/SKQUTRXIJNMUL1">
+
                 <button
                   type="button"
                   className="w-full mt-6 px-2 py-2 text-sm font-semibold text-white bg-[#076253] hover:bg-green-700 rounded-md"
                 >
                   Book now
                 </button>
+                </a>
               </Link>
             </div>
           </div>
