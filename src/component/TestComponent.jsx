@@ -1,5 +1,5 @@
 // export default TestComponent;
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { IoCall, IoLocation } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
@@ -76,39 +76,30 @@ const TestComponent = () => {
                 Gorakhpur,Jabalpur
               </span>
             </div>
-          <a href="https://wa.me/message/SKQUTRXIJNMUL1" target="_blank">
+            <a href="https://wa.me/message/SKQUTRXIJNMUL1" target="_blank">
+              <div className="flex items-center mt-5">
+                <svg
+                  className="h-6 mr-2 text-indigo-600"
+                  fill="currentColor"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 60.002 60.002"
+                  style={{ enableBackground: "new 0 0 60.002 60.002" }}
+                  xmlSpace="preserve"
+                >
+                  {/* SVG Path Data */}
+                </svg>
 
-            <div className="flex items-center mt-5">
-              <svg
-                className="h-6 mr-2 text-indigo-600"
-                fill="currentColor"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 60.002 60.002"
-                style={{ enableBackground: "new 0 0 60.002 60.002" }}
-                xmlSpace="preserve"
-              >
-                {/* SVG Path Data */}
-              </svg>
+                <button className="text-lg font-medium flex items-center gap-2 ">
+                  <FaWhatsapp />
+                  Watsapp
+                </button>
+              </div>
+            </a>
 
-              <button
-                className="text-lg font-medium flex items-center gap-2 "
-                 
-              >
-               
-
-                <FaWhatsapp />
-               Watsapp
-                 
-
-              </button>
-              
-            </div>
-          </a>
-             
             <div className="flex items-center mt-5">
               <svg
                 className="h-6 mr-2 text-indigo-600"
